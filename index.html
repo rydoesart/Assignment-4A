@@ -143,10 +143,25 @@
             <h2 class="modal-title fs-5" id="booking-title">Book a Tour</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body"></div>
+          <div class="modal-body">
+            <form id="booking-form">
+              <div class="form-floating">
+                <input class="form-control" id="booking-email" type="email" placeholder="name@example.com" autocomplete="email" required />
+                <label for="booking-email">Email address</label>
+              </div>
+              <div class="form-floating">
+                <select class="form-select" id="booking-tour">
+                  <option value="iceland-waterfalls">Iceland Waterfalls</option>
+                  <option value="lofoten-northern-lights">Lofoten Northern Lights</option>
+                  <option value="skaftafell-glacier-hike">Skaftafell Glacier Hike</option>
+                </select>
+                <label for="booking-tour">Choose a tour</label>
+              </div>
+            </form>
+          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" disabled>Checkout</button>
+            <button type="submit" class="btn btn-primary" form="booking-form">Checkout</button>
           </div>
         </div>
       </div>
@@ -158,5 +173,11 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Keep the tutorial form local after the browser validates it.
+      document.getElementById("booking-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+      });
+    </script>
   </body>
 </html>
