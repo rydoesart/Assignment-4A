@@ -68,7 +68,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form id="booking-form" class="row g-2">
+            <form class="row g-2">
               <div class="col-sm-6">
                 <div class="form-floating">
                   <input
@@ -76,8 +76,6 @@
                     id="booking-email"
                     type="email"
                     placeholder="name@example.com"
-                    autocomplete="email"
-                    required
                   />
                   <label for="booking-email">Email address</label>
                 </div>
@@ -108,7 +106,7 @@
             >
               Close
             </button>
-            <button type="submit" class="btn btn-primary" form="booking-form">
+            <button type="button" class="btn btn-primary">
               Checkout
             </button>
           </div>
@@ -461,13 +459,5 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Keep the tutorial form local after the browser validates it.
-      document
-        .getElementById("booking-form")
-        .addEventListener("submit", (event) => {
-          event.preventDefault();
-        });
-    </script>
   </body>
 </html>
