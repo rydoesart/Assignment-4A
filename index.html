@@ -80,7 +80,7 @@
             <div class="carousel-caption top-0 mt-3 mt-md-4">
               <p class="mt-3 mt-md-5 fs-3 text-uppercase">Discover the hidden world</p>
               <h1 class="display-1 fw-bolder">Aurora Tours</h1>
-              <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5" disabled>
+              <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5" data-bs-toggle="modal" data-bs-target="#booking-modal">
                 Book a Tour
               </button>
             </div>
@@ -94,7 +94,7 @@
             <div class="carousel-caption top-0 mt-3 mt-md-4">
               <p class="mt-3 mt-md-5 fs-3 text-uppercase">The season has arrived</p>
               <p class="display-1 fw-bolder">Three Available Tours</p>
-              <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5" disabled>
+              <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5" data-bs-toggle="modal" data-bs-target="#booking-modal">
                 Book a Tour
               </button>
             </div>
@@ -108,7 +108,7 @@
             <div class="carousel-caption top-0 mt-3 mt-md-4">
               <p class="mt-3 mt-md-5 fs-3 text-uppercase">Destination activities</p>
               <p class="display-1 fw-bolder">Go Glacier Hiking</p>
-              <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5" disabled>
+              <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5" data-bs-toggle="modal" data-bs-target="#booking-modal">
                 Book a Tour
               </button>
             </div>
@@ -134,6 +134,23 @@
         </button>
       </div>
     </main>
+
+    <!-- Booking modal. -->
+    <div class="modal fade" id="booking-modal" tabindex="-1" aria-labelledby="booking-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="booking-title">Book a Tour</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" disabled>Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- link to BootStrap JS -->
     <script
