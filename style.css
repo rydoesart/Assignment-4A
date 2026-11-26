@@ -8,3 +8,8 @@
   object-fit: cover;
   filter: brightness(0.45);
 }
+
+/* Tour overview. */
+.overview {
+  min-block-size: 11.25rem;
+}
