@@ -144,18 +144,22 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form id="booking-form">
-              <div class="form-floating">
-                <input class="form-control" id="booking-email" type="email" placeholder="name@example.com" autocomplete="email" required />
-                <label for="booking-email">Email address</label>
+            <form id="booking-form" class="row g-2">
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input class="form-control" id="booking-email" type="email" placeholder="name@example.com" autocomplete="email" required />
+                  <label for="booking-email">Email address</label>
+                </div>
               </div>
-              <div class="form-floating">
-                <select class="form-select" id="booking-tour">
-                  <option value="iceland-waterfalls">Iceland Waterfalls</option>
-                  <option value="lofoten-northern-lights">Lofoten Northern Lights</option>
-                  <option value="skaftafell-glacier-hike">Skaftafell Glacier Hike</option>
-                </select>
-                <label for="booking-tour">Choose a tour</label>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <select class="form-select" id="booking-tour">
+                    <option value="iceland-waterfalls">Iceland Waterfalls</option>
+                    <option value="lofoten-northern-lights">Lofoten Northern Lights</option>
+                    <option value="skaftafell-glacier-hike">Skaftafell Glacier Hike</option>
+                  </select>
+                  <label for="booking-tour">Choose a tour</label>
+                </div>
               </div>
             </form>
           </div>
