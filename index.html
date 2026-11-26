@@ -47,6 +47,75 @@
       </div>
     </nav>
 
+    <!-- Booking modal. -->
+    <div
+      class="modal fade"
+      id="booking-modal"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="booking-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="booking-title">Book a Tour</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="booking-form" class="row g-2">
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input
+                    class="form-control"
+                    id="booking-email"
+                    type="email"
+                    placeholder="name@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                  <label for="booking-email">Email address</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <select class="form-select" id="booking-tour">
+                    <option value="iceland-waterfalls">
+                      Iceland Waterfalls
+                    </option>
+                    <option value="lofoten-northern-lights">
+                      Lofoten Northern Lights
+                    </option>
+                    <option value="skaftafell-glacier-hike">
+                      Skaftafell Glacier Hike
+                    </option>
+                  </select>
+                  <label for="booking-tour">Choose a tour</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary" form="booking-form">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <main>
       <!-- Hero carousel. -->
       <div
@@ -385,75 +454,6 @@
         <small class="text-white-50">© 2026 Aurora Tours</small>
       </div>
     </footer>
-
-    <!-- Booking modal. -->
-    <div
-      class="modal fade"
-      id="booking-modal"
-      role="dialog"
-      tabindex="-1"
-      aria-labelledby="booking-title"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title fs-5" id="booking-title">Book a Tour</h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form id="booking-form" class="row g-2">
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <input
-                    class="form-control"
-                    id="booking-email"
-                    type="email"
-                    placeholder="name@example.com"
-                    autocomplete="email"
-                    required
-                  />
-                  <label for="booking-email">Email address</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <select class="form-select" id="booking-tour">
-                    <option value="iceland-waterfalls">
-                      Iceland Waterfalls
-                    </option>
-                    <option value="lofoten-northern-lights">
-                      Lofoten Northern Lights
-                    </option>
-                    <option value="skaftafell-glacier-hike">
-                      Skaftafell Glacier Hike
-                    </option>
-                  </select>
-                  <label for="booking-tour">Choose a tour</label>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="submit" class="btn btn-primary" form="booking-form">
-              Checkout
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Load the Bootstrap JavaScript bundle. -->
     <script
