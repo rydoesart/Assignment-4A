@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Aurora Tours</title>
-    <!-- link to Bootstrap files via CDN -->
+    <!-- Load Bootstrap styles from the CDN. -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!-- link to Bootstrap icons -->
+    <!-- Load Bootstrap Icons from the CDN. -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
@@ -36,7 +36,9 @@
         </button>
         <div class="collapse navbar-collapse" id="main-navigation">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#faq">Frequently Asked Questions</a>
             </li>
@@ -47,7 +49,12 @@
 
     <main>
       <!-- Hero carousel. -->
-      <div id="hero-carousel" class="carousel slide" aria-label="Tour highlights" role="region">
+      <div
+        id="hero-carousel"
+        class="carousel slide"
+        aria-label="Tour highlights"
+        role="region"
+      >
         <div class="carousel-indicators">
           <button
             type="button"
@@ -78,9 +85,16 @@
               alt="Green northern lights reflected in a lake beneath snowy mountains"
             />
             <div class="carousel-caption top-0 mt-3 mt-md-4">
-              <p class="mt-3 mt-md-5 fs-3 text-uppercase">Discover the hidden world</p>
+              <p class="mt-3 mt-md-5 fs-3 text-uppercase">
+                Discover the hidden world
+              </p>
               <h1 class="display-1 fw-bolder">Aurora Tours</h1>
-              <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5" data-bs-toggle="modal" data-bs-target="#booking-modal">
+              <button
+                type="button"
+                class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
                 Book a Tour
               </button>
             </div>
@@ -92,9 +106,16 @@
               alt="Sled dogs crossing a snowy plain under the northern lights"
             />
             <div class="carousel-caption top-0 mt-3 mt-md-4">
-              <p class="mt-3 mt-md-5 fs-3 text-uppercase">The season has arrived</p>
+              <p class="mt-3 mt-md-5 fs-3 text-uppercase">
+                The season has arrived
+              </p>
               <p class="display-1 fw-bolder">Three Available Tours</p>
-              <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5" data-bs-toggle="modal" data-bs-target="#booking-modal">
+              <button
+                type="button"
+                class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
                 Book a Tour
               </button>
             </div>
@@ -106,9 +127,16 @@
               alt="Northern lights over an ice-covered shoreline"
             />
             <div class="carousel-caption top-0 mt-3 mt-md-4">
-              <p class="mt-3 mt-md-5 fs-3 text-uppercase">Destination activities</p>
+              <p class="mt-3 mt-md-5 fs-3 text-uppercase">
+                Destination activities
+              </p>
               <p class="display-1 fw-bolder">Go Glacier Hiking</p>
-              <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5" data-bs-toggle="modal" data-bs-target="#booking-modal">
+              <button
+                type="button"
+                class="btn btn-primary px-4 py-2 fs-5 mt-3 mt-md-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
                 Book a Tour
               </button>
             </div>
@@ -134,25 +162,37 @@
         </button>
       </div>
       <!-- Tour overview. -->
-      <section class="overview d-flex align-items-center bg-body-tertiary py-4" aria-labelledby="overview-title">
+      <section
+        class="overview d-flex align-items-center bg-body-tertiary py-4"
+        aria-labelledby="overview-title"
+      >
         <div class="container">
           <h2 id="overview-title" class="visually-hidden">Tour Overview</h2>
-          <ul class="row row-cols-1 row-cols-xl-3 g-3 mb-0 list-unstyled text-center fs-5">
+          <ul
+            class="row row-cols-1 row-cols-xl-3 g-3 mb-0 list-unstyled text-center fs-5"
+          >
             <li class="col">
-              <i class="bi bi-airplane-fill me-2" aria-hidden="true"></i>3 amazing destinations
+              <i class="bi bi-airplane-fill me-2" aria-hidden="true"></i>3
+              amazing destinations
             </li>
             <li class="col">
-              <i class="bi bi-people-fill me-2" aria-hidden="true"></i>Guided small-group tours
+              <i class="bi bi-people-fill me-2" aria-hidden="true"></i>Guided
+              small-group tours
             </li>
             <li class="col">
-              <i class="bi bi-stars me-2" aria-hidden="true"></i>Glacier and aurora excursions
+              <i class="bi bi-stars me-2" aria-hidden="true"></i>Glacier and
+              aurora excursions
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Tour packages. -->
-      <section id="packages" class="py-4 py-md-5" aria-labelledby="packages-title">
+      <section
+        id="packages"
+        class="py-4 py-md-5"
+        aria-labelledby="packages-title"
+      >
         <div class="container">
           <h2 id="packages-title" class="mb-4 mb-md-5 text-center">Packages</h2>
           <div class="row row-cols-1 row-cols-lg-3 g-3 g-md-4">
@@ -168,8 +208,16 @@
                 />
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title h5">Iceland Waterfalls</h3>
-                  <p class="card-text">Follow Iceland’s south coast to waterfalls that tumble over the cliffs, including Skógafoss.</p>
-                  <button type="button" class="btn btn-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#booking-modal">
+                  <p class="card-text">
+                    Follow Iceland’s south coast to waterfalls that tumble over
+                    the cliffs, including Skógafoss.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary mt-auto align-self-start"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking-modal"
+                  >
                     Book a Tour
                   </button>
                 </div>
@@ -187,8 +235,16 @@
                 />
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title h5">Lofoten Northern Lights</h3>
-                  <p class="card-text">Explore Norwegian fishing villages by day and watch for the aurora after dark.</p>
-                  <button type="button" class="btn btn-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#booking-modal">
+                  <p class="card-text">
+                    Explore Norwegian fishing villages by day and watch for the
+                    aurora after dark.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary mt-auto align-self-start"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking-modal"
+                  >
                     Book a Tour
                   </button>
                 </div>
@@ -206,8 +262,16 @@
                 />
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title h5">Skaftafell Glacier Hike</h3>
-                  <p class="card-text">Hike with a guide to see the blue ice and deep crevasses of Skaftafell Glacier.</p>
-                  <button type="button" class="btn btn-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#booking-modal">
+                  <p class="card-text">
+                    Hike with a guide to see the blue ice and deep crevasses of
+                    Skaftafell Glacier.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary mt-auto align-self-start"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking-modal"
+                  >
                     Book a Tour
                   </button>
                 </div>
@@ -219,7 +283,9 @@
       <!-- Frequently asked questions. -->
       <section id="faq" class="py-4 py-md-5" aria-labelledby="faq-title">
         <div class="container">
-          <h2 id="faq-title" class="mb-4 mb-md-5 text-center">Frequently Asked Questions</h2>
+          <h2 id="faq-title" class="mb-4 mb-md-5 text-center">
+            Frequently Asked Questions
+          </h2>
           <div class="row justify-content-center">
             <div class="col-lg-9">
               <div class="accordion" id="tour-questions">
@@ -237,9 +303,16 @@
                       How long are the trips?
                     </button>
                   </h3>
-                  <div id="duration-answer" class="accordion-collapse collapse show" data-bs-parent="#tour-questions" role="region" aria-labelledby="duration-question">
+                  <div
+                    id="duration-answer"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#tour-questions"
+                    role="region"
+                    aria-labelledby="duration-question"
+                  >
                     <div class="accordion-body">
-                      The Iceland waterfall tour and glacier hike are day trips. The Lofoten Northern Lights tour runs for three nights.
+                      The Iceland waterfall tour and glacier hike are day trips.
+                      The Lofoten Northern Lights tour runs for three nights.
                     </div>
                   </div>
                 </div>
@@ -257,9 +330,16 @@
                       Do I need glacier hiking experience?
                     </button>
                   </h3>
-                  <div id="glacier-answer" class="accordion-collapse collapse" data-bs-parent="#tour-questions" role="region" aria-labelledby="glacier-question">
+                  <div
+                    id="glacier-answer"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#tour-questions"
+                    role="region"
+                    aria-labelledby="glacier-question"
+                  >
                     <div class="accordion-body">
-                      Beginners are welcome. Your guide will show you how to use the equipment before heading onto the ice.
+                      Beginners are welcome. Your guide will show you how to use
+                      the equipment before heading onto the ice.
                     </div>
                   </div>
                 </div>
@@ -277,9 +357,16 @@
                       When can I see the northern lights?
                     </button>
                   </h3>
-                  <div id="aurora-answer" class="accordion-collapse collapse" data-bs-parent="#tour-questions" role="region" aria-labelledby="aurora-question">
+                  <div
+                    id="aurora-answer"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#tour-questions"
+                    role="region"
+                    aria-labelledby="aurora-question"
+                  >
                     <div class="accordion-body">
-                      The Lofoten tour runs during the darker months. Clear, dark skies give us the best chance of spotting the aurora.
+                      The Lofoten tour runs during the darker months. Clear,
+                      dark skies give us the best chance of spotting the aurora.
                     </div>
                   </div>
                 </div>
@@ -299,27 +386,52 @@
     </footer>
 
     <!-- Booking modal. -->
-    <div class="modal fade" id="booking-modal" role="dialog" tabindex="-1" aria-labelledby="booking-title" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="booking-modal"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="booking-title"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="modal-title fs-5" id="booking-title">Book a Tour</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <form id="booking-form" class="row g-2">
               <div class="col-sm-6">
                 <div class="form-floating">
-                  <input class="form-control" id="booking-email" type="email" placeholder="name@example.com" autocomplete="email" required />
+                  <input
+                    class="form-control"
+                    id="booking-email"
+                    type="email"
+                    placeholder="name@example.com"
+                    autocomplete="email"
+                    required
+                  />
                   <label for="booking-email">Email address</label>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-floating">
                   <select class="form-select" id="booking-tour">
-                    <option value="iceland-waterfalls">Iceland Waterfalls</option>
-                    <option value="lofoten-northern-lights">Lofoten Northern Lights</option>
-                    <option value="skaftafell-glacier-hike">Skaftafell Glacier Hike</option>
+                    <option value="iceland-waterfalls">
+                      Iceland Waterfalls
+                    </option>
+                    <option value="lofoten-northern-lights">
+                      Lofoten Northern Lights
+                    </option>
+                    <option value="skaftafell-glacier-hike">
+                      Skaftafell Glacier Hike
+                    </option>
                   </select>
                   <label for="booking-tour">Choose a tour</label>
                 </div>
@@ -327,14 +439,22 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary" form="booking-form">Checkout</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary" form="booking-form">
+              Checkout
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- link to BootStrap JS -->
+    <!-- Load the Bootstrap JavaScript bundle. -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -342,9 +462,11 @@
     ></script>
     <script>
       // Keep the tutorial form local after the browser validates it.
-      document.getElementById("booking-form").addEventListener("submit", (event) => {
-        event.preventDefault();
-      });
+      document
+        .getElementById("booking-form")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+        });
     </script>
   </body>
 </html>
