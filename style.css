@@ -11,5 +11,6 @@
 
 /* Tour overview. */
 .overview {
-  min-block-size: 11.25rem;
+  height: 180px;
+  background-color: #d4dbe1;
 }
